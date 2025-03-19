@@ -22,9 +22,9 @@ export async function POST(req) {
                 { role: "system", content: aboutMe },
                 ...messages
             ],
-            model: "gpt-4o",
+            model: "gpt-4o-mini",
             temperature: 0.8,
-            max_tokens: 2048,
+            max_tokens: 4096,
             top_p: 1
         });
 
